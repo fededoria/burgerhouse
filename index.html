@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The best burgers in town">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="hero">
+      <header class="hero__header">
+        <h4 class="logo">BURGER HOUSE</h4>
+        <div class="header__right">
+          <p>Express delivery +1 2345 6789</p>
+          <nav>
+            <ul class="menu">
+              <li class="menu__item"><a href="#">Home</a></li>
+              <li class="menu__item"><a href="#">Menu</a></li>
+              <li class="menu__item"><a href="#">Our Story</a></li>
+              <li class="menu__item"><a href="#">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="hero__main">
+        <div class="hero__text">
+          <h4>It's a good time for the great taste of burgers.</h4>
+          <h2>BURGER</h2>
+          <h3>WEEK</h3>
+        </div>
+        <div class="hero__img">
+          <div class="sale">
+            <p class="price">$5<small>.49</small></p>
+            <p class="only">ONLY</p>
+          </div>
+          <img src="img/hero.png" alt="Burger" />
+        </div>
+      </div>
+    </section>
+    <main>
+      <section class="grid">
+        <div class="grid__item grid__item1">
+          <h5>TRY IT TODAY</h5>
+          <h4>MOST POPULAR BURGER</h4>
+        </div>
+        <div class="grid__item grid__item2">
+          <h5>TRY IT TODAY</h5>
+          <h4>MORE FUN MORE TASTE</h4>
+        </div>
+        <div class="grid__item grid__item3">
+          <h5>TRY IT TODAY</h5>
+          <h4>FRESH & CHILLI</h4>
+        </div>
+      </section>
+      <!-- ENJOY -->
+      <section class="enjoy">
+        <div class="titles">
+          <h4>ALWAYS TASTY BURGERS</h4>
+          <h2>Choose & enjoy</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
+            exercitationem vitae quos maiores esse excepturi corporis omnis.
+            Recusandae voluptatibus ex laudantium quisquam consequuntur sunt
+            velit tempora, consectetur obcaecati corrupti iste?
+          </p>
+        </div>
+        <div class="cards">
+          <div class="card card1">
+            <img
+              src="img/enjoy_champi-king_carne.png"
+              class="img-card"
+              alt="Burger"
+            />
+            <h4>LOREM IPSUM DOLOR</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <a href="#" class="btn-ver-mas">ORDER NOW!</a>
+          </div>
+          <div class="card card2">
+            <img
+              src="img/enjoy_chilli-king_carne.png"
+              class="img-card"
+              alt="Burger"
+            />
+            <h4>LOREM IPSUM DOLOR</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <a href="#" class="btn-ver-mas">ORDER NOW!</a>
+          </div>
+          <div class="card card3">
+            <img
+              src="img/enjoy_champi-king_carne.png"
+              class="img-card"
+              alt="Burger"
+            />
+            <h4>LOREM IPSUM DOLOR</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <a href="#" class="btn-ver-mas">ORDER NOW!</a>
+          </div>
+        </div>
+      </section>
+      <!-- EVENTS -->
+      <section class="events">
+        <div class="inner">
+          <div class="inner__left">
+            <h5>DISCOVER</h5>
+            <h3>UPCOMING EVENTS</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+              sapiente amet fugit temporibus laboriosam quod ratione libero
+              tempore earum illum. Deserunt, omnis molestiae provident libero
+              porro voluptate possimus dicta odio.
+            </p>
+          </div>
+          <div class="inner__right">
+            <img src="/img/events.jpg" alt="Events" />
+          </div>
+          <div class="dots">
+            <div class="dot dot1"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+      </section>
+      <section class="reservation">
+        <div class="reservation__heading">
+          <h5>RESERVATION</h5>
+          <h4>BOOK YOUR TABLE</h4>
+        </div>
+        <div class="reservation__form">
+          <input class="name" type="text" placeholder="Name" name="name" />
+          <input class="email" type="email" placeholder="Email" name="email" />
+          <input class="date" type="text" placeholder="Date" name="date" onfocus="(this.type='date')" onblur="(this.type='text')" /> <!-- El código javascript agregado sirve para que se muestre el placeholder "Date" ya que input de type date no lo muestra -->
+          <input class="time" type="text" placeholder="Time" name="time" onfocus="(this.type='time')" onblur="(this.type='text')" /> <!-- Mismo javascript que antes -->
+          <input class="people" type="number" placeholder="People" name="people" />
+          <input class="button" type="button" value="Find a Table">
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="footer__top__left">
+                <img src="/img/logo.png" alt="Burger House">
+                <h2>BURGER HOUSE</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime quidem molestias odio dolorum, obcaecati expedita accusantium doloribus nihil temporibus quasi.</p>
+            </div>
+            <div class="footer__top__right">
+                <p><i class="bi bi-geo-alt-fill"></i> MAIN ROAD, BUILDING NAME, COUNTRY<br>
+                <i class="bi bi-envelope-fill"></i> CONTACT@COMPANYMAIL.COM</p>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>© BURGER HOUSE 2024 ALL RIGHTS RESERVED</p>
+            <div class="social-icons">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-whatsapp"></i>
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>

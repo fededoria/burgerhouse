@@ -1,0 +1,21 @@
+Es un proyecto realizado por Carpi Coder en YouTuber
+
+Traté de hacerlo tal cual en el vídeo aún cuando hay cosas que no estoy de acuerdo.
+Por ejemplo, se repite mucho código en el CSS.
+
+Se podría darle estilo a los textos al principio del css, como los h1, h2, h3, que sabemos que no cambiarán, en lugar de estar definiendo font-family en cada h1, h2 etc que se usa.
+Lo mismo con los párrafos `p`, darle de antemano la font-family: "Lato";
+
+Si después hay que cambiar color, se hace según se requiera, y listo, no se define todo lo demás
+
+---
+
+Otra cosa que no me gusta es que al logo (es texto, no usa una imagen png), le da `h1` y no es recomendado por semántica/SEO.
+
+---
+
+En la sección que le dio la clase "inner" no sabía cómo hacer para que le quede los dos divs (uno al lado del otro) le queden del mismo tamaño... Lo buscó en stackoverflow, probó una cosa, probó otra, probó otra, hasta que le quedó usando `min-width: 0` tanto a `inner__left` como a `inner__right`
+
+Raro esto, recordemos que él da clase en CoderHouse, y medio que llegó al resultado porbando a ver cuál quedaba bien, onda que debería saber cómo se hace en lugar de estar probando "en vivo", me parece.
+
+Igual, eso se soluciona más fácil usando Grid en lugar de Flexbox.

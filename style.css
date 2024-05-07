@@ -1,0 +1,646 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Lato&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: rgb(92, 45, 24);
+    ::selection {
+        background-color: rgb(92, 45, 24);
+        color: rgb(255, 214, 92);
+    }
+}
+
+/* FONTS */
+
+
+/* .bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .alfa-slab-one-regular {
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+  } */
+      
+.hero {
+    /* height: 100vh; */
+    background-color: rgb(255, 214, 92);
+}
+
+.hero__header {
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 2rem 2rem 0rem 2rem;
+}
+
+.hero__header .logo {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.header__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.header__right .menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+    & a {
+        transition: .5s all ease 0s;
+    }
+    & a:hover {
+        color: rgb(210, 166, 34);
+    }
+}
+
+.header__right p {
+    font-family: 'Lato', sans-serif;
+}
+
+.hero__main {
+    display: flex;
+    padding-inline: 4rem;
+}
+
+.hero__main > div {
+    flex: 1;
+}
+
+.hero__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero__text h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    border: 2px dashed  rgb(92, 45, 24);
+    width: max-content;
+    padding: 0.6rem;
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.hero__text h2 {
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-size: 5rem;
+    line-height: 1;
+    text-shadow: 5px 5px 0 #fefefe;
+}
+
+.hero__text h3 {
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-size: 3rem;
+    text-shadow: 5px 5px 0 #fefefe;
+}
+
+.hero__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 3rem;
+    position: relative; /* para poder ubicar el .sale */
+}
+
+.hero__main img {
+    height: 70vh;
+}
+
+.sale {
+    position: absolute;
+    bottom: 5rem;
+    left: 1rem;
+    background-color: rgb(161, 3, 3);
+    aspect-ratio: 1; /* mantiene proporción 1:1 */
+    border-radius: 50%;
+    width: 150px;
+    padding: 1rem;
+    border: 2px dashed white;
+    outline: 5px solid rgb(161, 3, 3);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.price, .only, .price small {
+    color: #fefefe;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.price {
+    font-size: 4rem;
+    line-height: 1;
+}
+
+.only {
+    font-size: 3rem;
+    letter-spacing: 5;
+    line-height: 1;
+    font-weight: 100;
+}
+
+.price small {
+    font-size: 1.7rem;
+}
+
+/*------ INICIO GRID ------*/
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "item1 item2"
+    "item1 item3";
+    gap: 2rem;
+
+    padding: 4rem;
+}
+
+.grid__item h4, .grid__item h5 {
+    color: #fefefe;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 300;
+}
+
+.grid__item h4 {
+    font-size: 2.5rem;
+}
+
+.grid__item h5 {
+    font-size: 1.5rem;
+}
+
+.grid__item {
+    background-size: cover;
+    background-position: center center;
+    padding: 2rem;
+    border-radius: 15px;
+    color: #fefefe;
+}
+
+.grid__item1 {
+    background-image: url("../img/grid-big.jpg");
+    grid-area: item1;
+    height: 350px;
+}
+
+.grid__item2 {
+    background-image: url("../img/grid-small1.jpg");
+    background-size: cover;
+    background-position: 10px;
+    grid-area: item2;
+}
+
+.grid__item3 {
+    background-image: url("../img/grid-small2.jpg");
+    grid-area: item3;
+}
+
+/* FIN GRID */
+/*---------- INICIO ENJOY ----------*/
+.enjoy {
+    padding: 20px;
+
+}
+
+.titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-inline: 8rem;
+}
+
+.titles h4 {
+    padding: 10px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.3rem;
+    background-color: rgb(255, 214, 92);
+}
+
+.titles h2 {
+    padding: 10px;
+    font-family: "Alfa Slab One", serif;
+    font-size: 2.5rem;
+}
+
+.titles p {
+    padding: 10px;
+    font-family: "Lato", serif;
+}
+/*---------- FIN ENJOY ----------*/
+
+/* INICIO CARDS */
+
+.cards {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .7rem;
+}
+
+.card p {
+    font-family: "Lato", sans-serif;
+    /* font-size: 1.5rem; */
+    font-weight: 300;
+    text-align: center;
+    width: 80%;
+}
+.card h4 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.card img {
+    max-width: 100%; /* Para que el tamaño no sobrepase el de su div contenedor*/
+}
+
+.card a {
+    text-decoration: none;
+    font-family: "Alfa Slab One", serif;
+    font-weight: lighter;
+    font-size: 1.1rem;
+
+}
+
+.btn-ver-mas {
+    background-color: #f00;
+    padding: 10px 15px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #fefefe;
+}
+
+/* FIN CARDS */
+
+/* INICIO EVENTS */
+.events {
+    padding: 6rem;
+    padding-top: 3rem;
+    margin: 2rem;
+}
+
+.inner {
+    display: flex;
+    padding: 2rem;
+    box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.315);
+    position: relative;
+}
+.inner__left {
+    flex: 1;
+    padding-block: 2rem;
+}
+.inner__right {
+    flex: 1.2; /* Para que la imagen tome un poco más de la mitad del div contenedor del flex*/
+    min-width: 0;
+}
+
+.inner__right img {
+    max-width: 100%;
+}
+
+.inner h5 {
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.inner h3 {
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.inner p {
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    width: 80%;
+}
+
+.dots {
+    display: flex;
+    position: absolute;
+    bottom: 2rem;
+    gap: 5px;
+}
+.dot {
+    background-color: rgb(200, 200, 200);
+    aspect-ratio: 1;
+    width: 15px;
+    border-radius: 50%;
+}
+
+.dot1 {
+    background-color: rgb(255, 214, 92);
+}
+/* FIN EVENTS */
+/*---------- INICIO FORM ----------*/
+.reservation__heading h5 {
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.reservation__heading h4 {
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.reservation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    /* Imágenes de fondo, dos imágenes separadas por coma */
+    background-image: 
+      url(/img/ingredientes-salsa.webp),
+      url(/img/ingredientes-brioche.png);
+    background-repeat: no-repeat;
+    background-size:
+      200px,
+      400px;
+    background-position:
+      left 50px,
+      1100px 50px;
+}
+
+.reservation__heading {
+    text-align: center;
+    padding: 1rem;
+}
+
+.reservation__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3) 1fr;
+    grid-template-areas: 
+    "name   email"
+    "date   time"
+    "people button";
+    gap: 1rem;
+    width: 36rem;
+}
+
+.reservation__form input {
+    padding: 1rem 2rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.reservation__form .name {
+    grid-area: name;
+}
+.reservation__form .email {
+    grid-area: email;
+}
+.reservation__form .date {
+    grid-area: date;
+}
+.reservation__form .time {
+    grid-area: time;
+}
+.reservation__form .people {
+    grid-area: people;
+}
+.reservation__form .button {
+    grid-area: button;
+    background-color: rgb(161,3,3);
+    border: none;
+    border-radius: 2px;
+    color: #fefefe;
+    font-family: "Alfa Slab One", serif;
+    font-weight: lighter;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+/* FIN FORM */
+
+/*########## INICIO FOOTER ##########*/
+footer {
+    margin: 70px 20px 20px;
+    padding: 20px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(00,00,00,0.7),
+        rgba(00,00,00,0.7)
+        )
+        ,url("/img/footer.jpg");
+
+    background-size: cover;
+    background-position: center center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.footer__top__left img {
+    width: 50px;
+}
+
+.footer h2 {
+    color: #fefefe;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+
+.footer p {
+    color: #fefefe;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 30px 0px 30px;
+}
+
+.footer__top__left, .footer__top__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.footer__top__right {
+    align-items: flex-end;
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px 30px;
+}
+
+/* color blanco para los iconos */
+.footer .bi {
+    color: #fefefe;
+}
+/*########## FIN FOOTER ##########*/
+
+/*----- MEDIA QUERIES -----*/
+@media screen and (max-width: 600px) {
+    .hero__header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+    .header__right {
+        align-items: flex-start;
+    }
+    .header__right .menu {
+        gap: 1rem;
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+    }
+    .hero__main {
+        flex-direction: column;
+        padding: 6rem 1rem 1rem;
+    }
+    .hero__text h2 {
+        font-size: 3rem;
+        line-height: 1;
+    }
+    
+    .hero__text h3 {
+        font-size: 2rem;
+    }
+    .hero__text h4 {
+        font-size: 1rem;
+        border: 2px dashed  rgb(92, 45, 24);
+        width: 90%;
+        padding: 0.6rem;
+        padding-bottom: 0.4rem;
+        margin-bottom: 1rem;
+    }
+    .hero__main img {
+        width: 80vw;
+    }
+    .hero__img {
+        padding: 0.1rem;
+    }
+    
+    /* GRID */
+    .grid {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    
+        padding: 4rem;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        gap: .3rem;
+    }
+    .titles {
+        padding-inline: 1rem;
+    }
+    .titles h2 {
+        font-size: 2rem;
+    }
+
+    .events {
+        padding: 1rem;
+        padding-top: 1rem;
+    }
+    
+    .inner {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .inner__left {
+        padding-block: 2rem;
+    }
+    .inner__right {
+        order: -1;
+    }
+    
+    .inner__right img {
+        max-width: 100%;
+    }
+    .inner h3 {
+        font-size: 1.5rem;
+    }
+    .reservation__heading h4 {
+        font-size: 1.5rem;
+    }
+    /* FORM */
+    .reservation__form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 80vw;
+    }
+    /* FOOTER */
+    footer {
+        /* margin: 70px 20px 20px; */
+        padding: 10px;
+        gap: 2rem;
+    }
+    .footer__top {
+        flex-direction: column;
+        padding: 10px;
+        gap: 1rem;
+    }
+    .footer__top__right {
+        align-items: flex-start;
+    }
+
+    .footer__bottom {
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+        gap: 1rem;
+    }
+    .social-icons {
+        order: -1;
+    }
+}
