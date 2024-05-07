@@ -204,20 +204,20 @@
 }
 
 .grid__item1 {
-    background-image: url("../img/grid-big.jpg");
+    background-image: url("img/grid-big.jpg");
     grid-area: item1;
     height: 350px;
 }
 
 .grid__item2 {
-    background-image: url("../img/grid-small1.jpg");
+    background-image: url("img/grid-small1.jpg");
     background-size: cover;
     background-position: 10px;
     grid-area: item2;
 }
 
 .grid__item3 {
-    background-image: url("../img/grid-small2.jpg");
+    background-image: url("img/grid-small2.jpg");
     grid-area: item3;
 }
 
@@ -393,8 +393,8 @@
     gap: 2rem;
     /* Imágenes de fondo, dos imágenes separadas por coma */
     background-image: 
-      url(/img/ingredientes-salsa.webp),
-      url(/img/ingredientes-brioche.png);
+      url(img/ingredientes-salsa.webp),
+      url(img/ingredientes-brioche.png);
     background-repeat: no-repeat;
     background-size:
       200px,
@@ -466,7 +466,7 @@ footer {
         rgba(00,00,00,0.7),
         rgba(00,00,00,0.7)
         )
-        ,url("/img/footer.jpg");
+        ,url("img/footer.jpg");
 
     background-size: cover;
     background-position: center center;
